@@ -35,7 +35,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2018</returns>
-        InlineResponse2018 CreateProduct (ProductForm productForm, int? companyId, string include = null);
+        InlineResponse2018 CreateProduct(ProductForm productForm, int? companyId, string include = null);
 
         /// <summary>
         /// Create
@@ -48,7 +48,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2018</returns>
-        ApiResponse<InlineResponse2018> CreateProductWithHttpInfo (ProductForm productForm, int? companyId, string include = null);
+        ApiResponse<InlineResponse2018> CreateProductWithHttpInfo(ProductForm productForm, int? companyId, string include = null);
         /// <summary>
         /// Delete
         /// </summary>
@@ -59,7 +59,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>Object</returns>
-        Object DeleteProduct (int? companyId, int? id);
+        Object DeleteProduct(int? companyId, int? id);
 
         /// <summary>
         /// Delete
@@ -71,7 +71,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> DeleteProductWithHttpInfo (int? companyId, int? id);
+        ApiResponse<Object> DeleteProductWithHttpInfo(int? companyId, int? id);
         /// <summary>
         /// Index
         /// </summary>
@@ -87,7 +87,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2009</returns>
-        InlineResponse2009 ListProducts (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        InlineResponse2009 ListProducts(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
 
         /// <summary>
         /// Index
@@ -104,7 +104,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2009</returns>
-        ApiResponse<InlineResponse2009> ListProductsWithHttpInfo (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        ApiResponse<InlineResponse2009> ListProductsWithHttpInfo(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
         /// <summary>
         /// Show
         /// </summary>
@@ -116,7 +116,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2018</returns>
-        InlineResponse2018 ShowProduct (int? companyId, int? id, string include = null);
+        InlineResponse2018 ShowProduct(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Show
@@ -129,7 +129,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2018</returns>
-        ApiResponse<InlineResponse2018> ShowProductWithHttpInfo (int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse2018> ShowProductWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Edit
         /// </summary>
@@ -142,7 +142,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2018</returns>
-        InlineResponse2018 UpdateProduct (ProductForm1 productForm, int? companyId, int? id, string include = null);
+        InlineResponse2018 UpdateProduct(ProductForm1 productForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Edit
@@ -156,7 +156,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2018</returns>
-        ApiResponse<InlineResponse2018> UpdateProductWithHttpInfo (ProductForm1 productForm, int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse2018> UpdateProductWithHttpInfo(ProductForm1 productForm, int? companyId, int? id, string include = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -170,7 +170,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2018</returns>
-        System.Threading.Tasks.Task<InlineResponse2018> CreateProductAsync (ProductForm productForm, int? companyId, string include = null);
+        System.Threading.Tasks.Task<InlineResponse2018> CreateProductAsync(ProductForm productForm, int? companyId, string include = null);
 
         /// <summary>
         /// Create
@@ -183,7 +183,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2018)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> CreateProductAsyncWithHttpInfo (ProductForm productForm, int? companyId, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> CreateProductAsyncWithHttpInfo(ProductForm productForm, int? companyId, string include = null);
         /// <summary>
         /// Delete
         /// </summary>
@@ -194,7 +194,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> DeleteProductAsync (int? companyId, int? id);
+        System.Threading.Tasks.Task<Object> DeleteProductAsync(int? companyId, int? id);
 
         /// <summary>
         /// Delete
@@ -206,7 +206,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProductAsyncWithHttpInfo (int? companyId, int? id);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProductAsyncWithHttpInfo(int? companyId, int? id);
         /// <summary>
         /// Index
         /// </summary>
@@ -222,7 +222,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2009</returns>
-        System.Threading.Tasks.Task<InlineResponse2009> ListProductsAsync (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        System.Threading.Tasks.Task<InlineResponse2009> ListProductsAsync(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
 
         /// <summary>
         /// Index
@@ -239,7 +239,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2009)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> ListProductsAsyncWithHttpInfo (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> ListProductsAsyncWithHttpInfo(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
         /// <summary>
         /// Show
         /// </summary>
@@ -251,7 +251,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2018</returns>
-        System.Threading.Tasks.Task<InlineResponse2018> ShowProductAsync (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse2018> ShowProductAsync(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Show
@@ -264,7 +264,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2018)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> ShowProductAsyncWithHttpInfo (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> ShowProductAsyncWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Edit
         /// </summary>
@@ -277,7 +277,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2018</returns>
-        System.Threading.Tasks.Task<InlineResponse2018> UpdateProductAsync (ProductForm1 productForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse2018> UpdateProductAsync(ProductForm1 productForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Edit
@@ -291,7 +291,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2018)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> UpdateProductAsyncWithHttpInfo (ProductForm1 productForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> UpdateProductAsyncWithHttpInfo(ProductForm1 productForm, int? companyId, int? id, string include = null);
         #endregion Asynchronous Operations
     }
 
@@ -364,7 +364,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// Gets or sets the configuration object
         /// </summary>
         /// <value>An instance of the Configuration</value>
-        public Configuration Configuration {get; set;}
+        public Configuration Configuration { get; set; }
 
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
@@ -412,10 +412,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2018</returns>
-        public InlineResponse2018 CreateProduct (ProductForm productForm, int? companyId, string include = null)
+        public InlineResponse2018 CreateProduct(ProductForm productForm, int? companyId, string include = null)
         {
-             ApiResponse<InlineResponse2018> localVarResponse = CreateProductWithHttpInfo(productForm, companyId, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2018> localVarResponse = CreateProductWithHttpInfo(productForm, companyId, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -426,7 +426,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2018</returns>
-        public ApiResponse< InlineResponse2018 > CreateProductWithHttpInfo (ProductForm productForm, int? companyId, string include = null)
+        public ApiResponse<InlineResponse2018> CreateProductWithHttpInfo(ProductForm productForm, int? companyId, string include = null)
         {
             // verify the required parameter 'productForm' is set
             if (productForm == null)
@@ -479,11 +479,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -493,8 +493,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2018>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2018) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
-            
+                (InlineResponse2018)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
+
         }
 
         /// <summary>
@@ -505,10 +505,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2018</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2018> CreateProductAsync (ProductForm productForm, int? companyId, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse2018> CreateProductAsync(ProductForm productForm, int? companyId, string include = null)
         {
-             ApiResponse<InlineResponse2018> localVarResponse = await CreateProductAsyncWithHttpInfo(productForm, companyId, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2018> localVarResponse = await CreateProductAsyncWithHttpInfo(productForm, companyId, include);
+            return localVarResponse.Data;
 
         }
 
@@ -520,7 +520,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2018)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> CreateProductAsyncWithHttpInfo (ProductForm productForm, int? companyId, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> CreateProductAsyncWithHttpInfo(ProductForm productForm, int? companyId, string include = null)
         {
             // verify the required parameter 'productForm' is set
             if (productForm == null)
@@ -573,11 +573,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -587,8 +587,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2018>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2018) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
-            
+                (InlineResponse2018)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
+
         }
 
         /// <summary>
@@ -598,10 +598,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>Object</returns>
-        public Object DeleteProduct (int? companyId, int? id)
+        public Object DeleteProduct(int? companyId, int? id)
         {
-             ApiResponse<Object> localVarResponse = DeleteProductWithHttpInfo(companyId, id);
-             return localVarResponse.Data;
+            ApiResponse<Object> localVarResponse = DeleteProductWithHttpInfo(companyId, id);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -611,7 +611,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse< Object > DeleteProductWithHttpInfo (int? companyId, int? id)
+        public ApiResponse<Object> DeleteProductWithHttpInfo(int? companyId, int? id)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -656,11 +656,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -670,8 +670,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
-            
+                (Object)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+
         }
 
         /// <summary>
@@ -681,10 +681,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> DeleteProductAsync (int? companyId, int? id)
+        public async System.Threading.Tasks.Task<Object> DeleteProductAsync(int? companyId, int? id)
         {
-             ApiResponse<Object> localVarResponse = await DeleteProductAsyncWithHttpInfo(companyId, id);
-             return localVarResponse.Data;
+            ApiResponse<Object> localVarResponse = await DeleteProductAsyncWithHttpInfo(companyId, id);
+            return localVarResponse.Data;
 
         }
 
@@ -695,7 +695,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Ürün ID</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProductAsyncWithHttpInfo (int? companyId, int? id)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteProductAsyncWithHttpInfo(int? companyId, int? id)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -740,11 +740,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -754,8 +754,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
-            
+                (Object)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+
         }
 
         /// <summary>
@@ -770,10 +770,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2009</returns>
-        public InlineResponse2009 ListProducts (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public InlineResponse2009 ListProducts(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
-             ApiResponse<InlineResponse2009> localVarResponse = ListProductsWithHttpInfo(companyId, filterName, filterCode, sort, pageNumber, pageSize, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2009> localVarResponse = ListProductsWithHttpInfo(companyId, filterName, filterCode, filterArchived, sort, pageNumber, pageSize, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -788,7 +788,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2009</returns>
-        public ApiResponse< InlineResponse2009 > ListProductsWithHttpInfo (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public ApiResponse<InlineResponse2009> ListProductsWithHttpInfo(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -822,6 +822,7 @@ namespace PeakUp.Integrations.Parasut.Api
             if (companyId != null) localVarPathParams.Add("company_id", Configuration.ApiClient.ParameterToString(companyId)); // path parameter
             if (filterName != null) localVarQueryParams.Add("filter[name]", Configuration.ApiClient.ParameterToString(filterName)); // query parameter
             if (filterCode != null) localVarQueryParams.Add("filter[code]", Configuration.ApiClient.ParameterToString(filterCode)); // query parameter
+            if (filterArchived != null) localVarQueryParams.Add("filter[archived]", Configuration.ApiClient.ParameterToString(filterArchived)); // query parameter
             if (sort != null) localVarQueryParams.Add("sort", Configuration.ApiClient.ParameterToString(sort)); // query parameter
             if (pageNumber != null) localVarQueryParams.Add("page[number]", Configuration.ApiClient.ParameterToString(pageNumber)); // query parameter
             if (pageSize != null) localVarQueryParams.Add("page[size]", Configuration.ApiClient.ParameterToString(pageSize)); // query parameter
@@ -835,11 +836,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -849,8 +850,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2009>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2009) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2009)));
-            
+                (InlineResponse2009)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2009)));
+
         }
 
         /// <summary>
@@ -865,10 +866,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2009</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2009> ListProductsAsync (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse2009> ListProductsAsync(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
-             ApiResponse<InlineResponse2009> localVarResponse = await ListProductsAsyncWithHttpInfo(companyId, filterName, filterCode, sort, pageNumber, pageSize, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2009> localVarResponse = await ListProductsAsyncWithHttpInfo(companyId, filterName, filterCode, filterArchived, sort, pageNumber, pageSize, include);
+            return localVarResponse.Data;
 
         }
 
@@ -884,7 +885,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2009)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> ListProductsAsyncWithHttpInfo (int? companyId, string filterName = null, string filterCode = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2009>> ListProductsAsyncWithHttpInfo(int? companyId, string filterName = null, string filterCode = null, bool? filterArchived = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -918,6 +919,7 @@ namespace PeakUp.Integrations.Parasut.Api
             if (companyId != null) localVarPathParams.Add("company_id", Configuration.ApiClient.ParameterToString(companyId)); // path parameter
             if (filterName != null) localVarQueryParams.Add("filter[name]", Configuration.ApiClient.ParameterToString(filterName)); // query parameter
             if (filterCode != null) localVarQueryParams.Add("filter[code]", Configuration.ApiClient.ParameterToString(filterCode)); // query parameter
+            if (filterArchived != null) localVarQueryParams.Add("filter[archived]", Configuration.ApiClient.ParameterToString(filterArchived)); // query parameter
             if (sort != null) localVarQueryParams.Add("sort", Configuration.ApiClient.ParameterToString(sort)); // query parameter
             if (pageNumber != null) localVarQueryParams.Add("page[number]", Configuration.ApiClient.ParameterToString(pageNumber)); // query parameter
             if (pageSize != null) localVarQueryParams.Add("page[size]", Configuration.ApiClient.ParameterToString(pageSize)); // query parameter
@@ -931,11 +933,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -945,8 +947,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2009>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2009) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2009)));
-            
+                (InlineResponse2009)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2009)));
+
         }
 
         /// <summary>
@@ -957,10 +959,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2018</returns>
-        public InlineResponse2018 ShowProduct (int? companyId, int? id, string include = null)
+        public InlineResponse2018 ShowProduct(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse2018> localVarResponse = ShowProductWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2018> localVarResponse = ShowProductWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -971,7 +973,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2018</returns>
-        public ApiResponse< InlineResponse2018 > ShowProductWithHttpInfo (int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse2018> ShowProductWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -1017,11 +1019,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1031,8 +1033,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2018>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2018) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
-            
+                (InlineResponse2018)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
+
         }
 
         /// <summary>
@@ -1043,10 +1045,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2018</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2018> ShowProductAsync (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse2018> ShowProductAsync(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse2018> localVarResponse = await ShowProductAsyncWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2018> localVarResponse = await ShowProductAsyncWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -1058,7 +1060,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2018)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> ShowProductAsyncWithHttpInfo (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> ShowProductAsyncWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -1104,11 +1106,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1118,8 +1120,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2018>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2018) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
-            
+                (InlineResponse2018)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
+
         }
 
         /// <summary>
@@ -1131,10 +1133,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>InlineResponse2018</returns>
-        public InlineResponse2018 UpdateProduct (ProductForm1 productForm, int? companyId, int? id, string include = null)
+        public InlineResponse2018 UpdateProduct(ProductForm1 productForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse2018> localVarResponse = UpdateProductWithHttpInfo(productForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2018> localVarResponse = UpdateProductWithHttpInfo(productForm, companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1146,7 +1148,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2018</returns>
-        public ApiResponse< InlineResponse2018 > UpdateProductWithHttpInfo (ProductForm1 productForm, int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse2018> UpdateProductWithHttpInfo(ProductForm1 productForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'productForm' is set
             if (productForm == null)
@@ -1203,11 +1205,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1217,8 +1219,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2018>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2018) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
-            
+                (InlineResponse2018)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
+
         }
 
         /// <summary>
@@ -1230,10 +1232,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of InlineResponse2018</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2018> UpdateProductAsync (ProductForm1 productForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse2018> UpdateProductAsync(ProductForm1 productForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse2018> localVarResponse = await UpdateProductAsyncWithHttpInfo(productForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2018> localVarResponse = await UpdateProductAsyncWithHttpInfo(productForm, companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -1246,7 +1248,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Ürün ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2018)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> UpdateProductAsyncWithHttpInfo (ProductForm1 productForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2018>> UpdateProductAsyncWithHttpInfo(ProductForm1 productForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'productForm' is set
             if (productForm == null)
@@ -1303,11 +1305,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1317,8 +1319,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2018>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2018) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
-            
+                (InlineResponse2018)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2018)));
+
         }
 
     }

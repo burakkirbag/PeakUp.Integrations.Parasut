@@ -35,7 +35,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 ArchiveSalesInvoice (int? companyId, int? id, string include = null);
+        InlineResponse20111 ArchiveSalesInvoice(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Archive
@@ -48,7 +48,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> ArchiveSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse20111> ArchiveSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Cancel
         /// </summary>
@@ -60,7 +60,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 CancelSalesInvoice (int? companyId, int? id, string include = null);
+        InlineResponse20111 CancelSalesInvoice(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Cancel
@@ -73,7 +73,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> CancelSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse20111> CancelSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Convert estimate to invoice
         /// </summary>
@@ -86,7 +86,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 ConvertEstimateToInvoice (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
+        InlineResponse20111 ConvertEstimateToInvoice(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Convert estimate to invoice
@@ -100,7 +100,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> ConvertEstimateToInvoiceWithHttpInfo (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse20111> ConvertEstimateToInvoiceWithHttpInfo(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
         /// <summary>
         /// Create
         /// </summary>
@@ -112,7 +112,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 CreateSalesInvoice (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
+        InlineResponse20111 CreateSalesInvoice(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
 
         /// <summary>
         /// Create
@@ -125,7 +125,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> CreateSalesInvoiceWithHttpInfo (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
+        ApiResponse<InlineResponse20111> CreateSalesInvoiceWithHttpInfo(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
         /// <summary>
         /// Delete
         /// </summary>
@@ -136,7 +136,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>Object</returns>
-        Object DeleteSalesInvoice (int? companyId, int? id);
+        Object DeleteSalesInvoice(int? companyId, int? id);
 
         /// <summary>
         /// Delete
@@ -148,7 +148,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> DeleteSalesInvoiceWithHttpInfo (int? companyId, int? id);
+        ApiResponse<Object> DeleteSalesInvoiceWithHttpInfo(int? companyId, int? id);
         /// <summary>
         /// Index
         /// </summary>
@@ -157,12 +157,13 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </remarks>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20010</returns>
-        InlineResponse20010 ListSalesInvoices (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        InlineResponse20010 ListSalesInvoices(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
 
         /// <summary>
         /// Index
@@ -172,12 +173,13 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </remarks>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20010</returns>
-        ApiResponse<InlineResponse20010> ListSalesInvoicesWithHttpInfo (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        ApiResponse<InlineResponse20010> ListSalesInvoicesWithHttpInfo(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
         /// <summary>
         /// Pay
         /// </summary>
@@ -190,7 +192,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>InlineResponse2012</returns>
-        InlineResponse2012 PaySalesInvoice (PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
+        InlineResponse2012 PaySalesInvoice(PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Pay
@@ -204,7 +206,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2012</returns>
-        ApiResponse<InlineResponse2012> PaySalesInvoiceWithHttpInfo (PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse2012> PaySalesInvoiceWithHttpInfo(PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
         /// <summary>
         /// Recover
         /// </summary>
@@ -216,7 +218,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 RecoverSalesInvoice (int? companyId, int? id, string include = null);
+        InlineResponse20111 RecoverSalesInvoice(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Recover
@@ -229,7 +231,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> RecoverSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse20111> RecoverSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Show
         /// </summary>
@@ -241,7 +243,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 ShowSalesInvoice (int? companyId, int? id, string include = null);
+        InlineResponse20111 ShowSalesInvoice(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Show
@@ -254,7 +256,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> ShowSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse20111> ShowSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Unarchive
         /// </summary>
@@ -266,7 +268,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 UnarchiveSalesInvoice (int? companyId, int? id, string include = null);
+        InlineResponse20111 UnarchiveSalesInvoice(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Unarchive
@@ -279,7 +281,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> UnarchiveSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse20111> UnarchiveSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Edit
         /// </summary>
@@ -292,7 +294,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        InlineResponse20111 UpdateSalesInvoice (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
+        InlineResponse20111 UpdateSalesInvoice(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Edit
@@ -306,7 +308,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        ApiResponse<InlineResponse20111> UpdateSalesInvoiceWithHttpInfo (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
+        ApiResponse<InlineResponse20111> UpdateSalesInvoiceWithHttpInfo(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -320,7 +322,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> ArchiveSalesInvoiceAsync (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> ArchiveSalesInvoiceAsync(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Archive
@@ -333,7 +335,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ArchiveSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ArchiveSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Cancel
         /// </summary>
@@ -345,7 +347,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> CancelSalesInvoiceAsync (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> CancelSalesInvoiceAsync(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Cancel
@@ -358,7 +360,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CancelSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CancelSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Convert estimate to invoice
         /// </summary>
@@ -371,7 +373,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> ConvertEstimateToInvoiceAsync (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> ConvertEstimateToInvoiceAsync(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Convert estimate to invoice
@@ -385,7 +387,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ConvertEstimateToInvoiceAsyncWithHttpInfo (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ConvertEstimateToInvoiceAsyncWithHttpInfo(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null);
         /// <summary>
         /// Create
         /// </summary>
@@ -397,7 +399,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> CreateSalesInvoiceAsync (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> CreateSalesInvoiceAsync(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
 
         /// <summary>
         /// Create
@@ -410,7 +412,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CreateSalesInvoiceAsyncWithHttpInfo (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CreateSalesInvoiceAsyncWithHttpInfo(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null);
         /// <summary>
         /// Delete
         /// </summary>
@@ -421,7 +423,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> DeleteSalesInvoiceAsync (int? companyId, int? id);
+        System.Threading.Tasks.Task<Object> DeleteSalesInvoiceAsync(int? companyId, int? id);
 
         /// <summary>
         /// Delete
@@ -433,7 +435,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id);
         /// <summary>
         /// Index
         /// </summary>
@@ -442,12 +444,13 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </remarks>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20010</returns>
-        System.Threading.Tasks.Task<InlineResponse20010> ListSalesInvoicesAsync (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20010> ListSalesInvoicesAsync(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
 
         /// <summary>
         /// Index
@@ -457,12 +460,13 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </remarks>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20010)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20010>> ListSalesInvoicesAsyncWithHttpInfo (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20010>> ListSalesInvoicesAsyncWithHttpInfo(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null);
         /// <summary>
         /// Pay
         /// </summary>
@@ -475,7 +479,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>Task of InlineResponse2012</returns>
-        System.Threading.Tasks.Task<InlineResponse2012> PaySalesInvoiceAsync (PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse2012> PaySalesInvoiceAsync(PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Pay
@@ -489,7 +493,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2012)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse2012>> PaySalesInvoiceAsyncWithHttpInfo (PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse2012>> PaySalesInvoiceAsyncWithHttpInfo(PaymentForm3 paymentForm, int? companyId, int? id, string include = null);
         /// <summary>
         /// Recover
         /// </summary>
@@ -501,7 +505,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> RecoverSalesInvoiceAsync (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> RecoverSalesInvoiceAsync(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Recover
@@ -514,7 +518,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> RecoverSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> RecoverSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Show
         /// </summary>
@@ -526,7 +530,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> ShowSalesInvoiceAsync (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> ShowSalesInvoiceAsync(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Show
@@ -539,7 +543,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ShowSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ShowSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Unarchive
         /// </summary>
@@ -551,7 +555,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> UnarchiveSalesInvoiceAsync (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> UnarchiveSalesInvoiceAsync(int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Unarchive
@@ -564,7 +568,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UnarchiveSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UnarchiveSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null);
         /// <summary>
         /// Edit
         /// </summary>
@@ -577,7 +581,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        System.Threading.Tasks.Task<InlineResponse20111> UpdateSalesInvoiceAsync (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<InlineResponse20111> UpdateSalesInvoiceAsync(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
 
         /// <summary>
         /// Edit
@@ -591,7 +595,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UpdateSalesInvoiceAsyncWithHttpInfo (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
+        System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UpdateSalesInvoiceAsyncWithHttpInfo(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null);
         #endregion Asynchronous Operations
     }
 
@@ -664,7 +668,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// Gets or sets the configuration object
         /// </summary>
         /// <value>An instance of the Configuration</value>
-        public Configuration Configuration {get; set;}
+        public Configuration Configuration { get; set; }
 
         /// <summary>
         /// Provides a factory method hook for the creation of exceptions.
@@ -712,10 +716,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 ArchiveSalesInvoice (int? companyId, int? id, string include = null)
+        public InlineResponse20111 ArchiveSalesInvoice(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = ArchiveSalesInvoiceWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = ArchiveSalesInvoiceWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -726,7 +730,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > ArchiveSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse20111> ArchiveSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -772,11 +776,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -786,8 +790,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -798,10 +802,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> ArchiveSalesInvoiceAsync (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> ArchiveSalesInvoiceAsync(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await ArchiveSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await ArchiveSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -813,7 +817,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ArchiveSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ArchiveSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -859,11 +863,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -873,8 +877,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -885,10 +889,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 CancelSalesInvoice (int? companyId, int? id, string include = null)
+        public InlineResponse20111 CancelSalesInvoice(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = CancelSalesInvoiceWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = CancelSalesInvoiceWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -899,7 +903,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > CancelSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse20111> CancelSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -945,11 +949,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -959,8 +963,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -971,10 +975,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> CancelSalesInvoiceAsync (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> CancelSalesInvoiceAsync(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await CancelSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await CancelSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -986,7 +990,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CancelSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CancelSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -1032,11 +1036,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1046,8 +1050,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -1059,10 +1063,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 ConvertEstimateToInvoice (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public InlineResponse20111 ConvertEstimateToInvoice(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = ConvertEstimateToInvoiceWithHttpInfo(salesInvoiceForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = ConvertEstimateToInvoiceWithHttpInfo(salesInvoiceForm, companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1074,7 +1078,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > ConvertEstimateToInvoiceWithHttpInfo (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse20111> ConvertEstimateToInvoiceWithHttpInfo(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'salesInvoiceForm' is set
             if (salesInvoiceForm == null)
@@ -1131,11 +1135,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1145,8 +1149,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -1158,10 +1162,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> ConvertEstimateToInvoiceAsync (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> ConvertEstimateToInvoiceAsync(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await ConvertEstimateToInvoiceAsyncWithHttpInfo(salesInvoiceForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await ConvertEstimateToInvoiceAsyncWithHttpInfo(salesInvoiceForm, companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -1174,7 +1178,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ConvertEstimateToInvoiceAsyncWithHttpInfo (SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ConvertEstimateToInvoiceAsyncWithHttpInfo(SalesInvoiceForm2 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'salesInvoiceForm' is set
             if (salesInvoiceForm == null)
@@ -1231,11 +1235,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1245,8 +1249,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -1257,10 +1261,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 CreateSalesInvoice (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
+        public InlineResponse20111 CreateSalesInvoice(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = CreateSalesInvoiceWithHttpInfo(salesInvoiceForm, companyId, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = CreateSalesInvoiceWithHttpInfo(salesInvoiceForm, companyId, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1271,7 +1275,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > CreateSalesInvoiceWithHttpInfo (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
+        public ApiResponse<InlineResponse20111> CreateSalesInvoiceWithHttpInfo(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
         {
             // verify the required parameter 'salesInvoiceForm' is set
             if (salesInvoiceForm == null)
@@ -1324,11 +1328,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1338,8 +1342,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -1350,10 +1354,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> CreateSalesInvoiceAsync (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> CreateSalesInvoiceAsync(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await CreateSalesInvoiceAsyncWithHttpInfo(salesInvoiceForm, companyId, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await CreateSalesInvoiceAsyncWithHttpInfo(salesInvoiceForm, companyId, include);
+            return localVarResponse.Data;
 
         }
 
@@ -1365,7 +1369,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CreateSalesInvoiceAsyncWithHttpInfo (SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> CreateSalesInvoiceAsyncWithHttpInfo(SalesInvoiceForm salesInvoiceForm, int? companyId, string include = null)
         {
             // verify the required parameter 'salesInvoiceForm' is set
             if (salesInvoiceForm == null)
@@ -1418,11 +1422,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1432,8 +1436,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -1443,10 +1447,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>Object</returns>
-        public Object DeleteSalesInvoice (int? companyId, int? id)
+        public Object DeleteSalesInvoice(int? companyId, int? id)
         {
-             ApiResponse<Object> localVarResponse = DeleteSalesInvoiceWithHttpInfo(companyId, id);
-             return localVarResponse.Data;
+            ApiResponse<Object> localVarResponse = DeleteSalesInvoiceWithHttpInfo(companyId, id);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1456,7 +1460,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse< Object > DeleteSalesInvoiceWithHttpInfo (int? companyId, int? id)
+        public ApiResponse<Object> DeleteSalesInvoiceWithHttpInfo(int? companyId, int? id)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -1501,11 +1505,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1515,8 +1519,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
-            
+                (Object)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+
         }
 
         /// <summary>
@@ -1526,10 +1530,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> DeleteSalesInvoiceAsync (int? companyId, int? id)
+        public async System.Threading.Tasks.Task<Object> DeleteSalesInvoiceAsync(int? companyId, int? id)
         {
-             ApiResponse<Object> localVarResponse = await DeleteSalesInvoiceAsyncWithHttpInfo(companyId, id);
-             return localVarResponse.Data;
+            ApiResponse<Object> localVarResponse = await DeleteSalesInvoiceAsyncWithHttpInfo(companyId, id);
+            return localVarResponse.Data;
 
         }
 
@@ -1540,7 +1544,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="companyId">Firma ID</param>
         /// <param name="id">Fatura ID</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -1585,11 +1589,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1599,8 +1603,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Object) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
-            
+                (Object)Configuration.ApiClient.Deserialize(localVarResponse, typeof(Object)));
+
         }
 
         /// <summary>
@@ -1608,15 +1612,16 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </summary>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20010</returns>
-        public InlineResponse20010 ListSalesInvoices (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public InlineResponse20010 ListSalesInvoices(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
-             ApiResponse<InlineResponse20010> localVarResponse = ListSalesInvoicesWithHttpInfo(companyId, sort, pageNumber, pageSize, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20010> localVarResponse = ListSalesInvoicesWithHttpInfo(companyId, filterItemType, sort, pageNumber, pageSize, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1624,12 +1629,13 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </summary>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20010</returns>
-        public ApiResponse< InlineResponse20010 > ListSalesInvoicesWithHttpInfo (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public ApiResponse<InlineResponse20010> ListSalesInvoicesWithHttpInfo(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -1661,6 +1667,7 @@ namespace PeakUp.Integrations.Parasut.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (companyId != null) localVarPathParams.Add("company_id", Configuration.ApiClient.ParameterToString(companyId)); // path parameter
+            if (filterItemType != null) localVarQueryParams.Add("filter[item_type]", Configuration.ApiClient.ParameterToString(filterItemType)); // query parameter
             if (sort != null) localVarQueryParams.Add("sort", Configuration.ApiClient.ParameterToString(sort)); // query parameter
             if (pageNumber != null) localVarQueryParams.Add("page[number]", Configuration.ApiClient.ParameterToString(pageNumber)); // query parameter
             if (pageSize != null) localVarQueryParams.Add("page[size]", Configuration.ApiClient.ParameterToString(pageSize)); // query parameter
@@ -1674,11 +1681,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1688,8 +1695,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20010>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20010) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20010)));
-            
+                (InlineResponse20010)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20010)));
+
         }
 
         /// <summary>
@@ -1697,15 +1704,16 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </summary>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20010</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20010> ListSalesInvoicesAsync (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20010> ListSalesInvoicesAsync(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
-             ApiResponse<InlineResponse20010> localVarResponse = await ListSalesInvoicesAsyncWithHttpInfo(companyId, sort, pageNumber, pageSize, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20010> localVarResponse = await ListSalesInvoicesAsyncWithHttpInfo(companyId, filterItemType, sort, pageNumber, pageSize, include);
+            return localVarResponse.Data;
 
         }
 
@@ -1714,12 +1722,13 @@ namespace PeakUp.Integrations.Parasut.Api
         /// </summary>
         /// <exception cref="PeakUp.Integrations.Parasut.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="companyId">Firma ID</param>
+        /// <param name="filterItemType"> (optional)</param>
         /// <param name="sort">Sortable parameters - *Available: id, issue_date, due_date, remaining, remaining_in_trl* (optional, default to -remaining_in_trl)</param>
         /// <param name="pageNumber">Page Number (optional, default to 1)</param>
         /// <param name="pageSize">Page Size (optional, default to 15)</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20010)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20010>> ListSalesInvoicesAsyncWithHttpInfo (int? companyId, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20010>> ListSalesInvoicesAsyncWithHttpInfo(int? companyId, string filterItemType = null, string sort = null, int? pageNumber = null, int? pageSize = null, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -1751,6 +1760,7 @@ namespace PeakUp.Integrations.Parasut.Api
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
             if (companyId != null) localVarPathParams.Add("company_id", Configuration.ApiClient.ParameterToString(companyId)); // path parameter
+            if (filterItemType != null) localVarQueryParams.Add("filter[item_type]", Configuration.ApiClient.ParameterToString(filterItemType)); // query parameter
             if (sort != null) localVarQueryParams.Add("sort", Configuration.ApiClient.ParameterToString(sort)); // query parameter
             if (pageNumber != null) localVarQueryParams.Add("page[number]", Configuration.ApiClient.ParameterToString(pageNumber)); // query parameter
             if (pageSize != null) localVarQueryParams.Add("page[size]", Configuration.ApiClient.ParameterToString(pageSize)); // query parameter
@@ -1764,11 +1774,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1778,8 +1788,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20010>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20010) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20010)));
-            
+                (InlineResponse20010)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20010)));
+
         }
 
         /// <summary>
@@ -1791,10 +1801,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>InlineResponse2012</returns>
-        public InlineResponse2012 PaySalesInvoice (PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
+        public InlineResponse2012 PaySalesInvoice(PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse2012> localVarResponse = PaySalesInvoiceWithHttpInfo(paymentForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2012> localVarResponse = PaySalesInvoiceWithHttpInfo(paymentForm, companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1806,7 +1816,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>ApiResponse of InlineResponse2012</returns>
-        public ApiResponse< InlineResponse2012 > PaySalesInvoiceWithHttpInfo (PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse2012> PaySalesInvoiceWithHttpInfo(PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'paymentForm' is set
             if (paymentForm == null)
@@ -1863,11 +1873,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1877,8 +1887,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2012>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2012) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2012)));
-            
+                (InlineResponse2012)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2012)));
+
         }
 
         /// <summary>
@@ -1890,10 +1900,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>Task of InlineResponse2012</returns>
-        public async System.Threading.Tasks.Task<InlineResponse2012> PaySalesInvoiceAsync (PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse2012> PaySalesInvoiceAsync(PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse2012> localVarResponse = await PaySalesInvoiceAsyncWithHttpInfo(paymentForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse2012> localVarResponse = await PaySalesInvoiceAsyncWithHttpInfo(paymentForm, companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -1906,7 +1916,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: payable, tx* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse2012)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2012>> PaySalesInvoiceAsyncWithHttpInfo (PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse2012>> PaySalesInvoiceAsyncWithHttpInfo(PaymentForm3 paymentForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'paymentForm' is set
             if (paymentForm == null)
@@ -1963,11 +1973,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -1977,8 +1987,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse2012>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse2012) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2012)));
-            
+                (InlineResponse2012)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse2012)));
+
         }
 
         /// <summary>
@@ -1989,10 +1999,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 RecoverSalesInvoice (int? companyId, int? id, string include = null)
+        public InlineResponse20111 RecoverSalesInvoice(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = RecoverSalesInvoiceWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = RecoverSalesInvoiceWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2003,7 +2013,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > RecoverSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse20111> RecoverSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -2049,11 +2059,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2063,8 +2073,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -2075,10 +2085,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> RecoverSalesInvoiceAsync (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> RecoverSalesInvoiceAsync(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await RecoverSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await RecoverSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -2090,7 +2100,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> RecoverSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> RecoverSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -2136,11 +2146,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2150,8 +2160,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -2162,10 +2172,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 ShowSalesInvoice (int? companyId, int? id, string include = null)
+        public InlineResponse20111 ShowSalesInvoice(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = ShowSalesInvoiceWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = ShowSalesInvoiceWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2176,7 +2186,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > ShowSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse20111> ShowSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -2222,11 +2232,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2236,8 +2246,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -2248,10 +2258,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> ShowSalesInvoiceAsync (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> ShowSalesInvoiceAsync(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await ShowSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await ShowSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -2263,7 +2273,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ShowSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> ShowSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -2309,11 +2319,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2323,8 +2333,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -2335,10 +2345,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 UnarchiveSalesInvoice (int? companyId, int? id, string include = null)
+        public InlineResponse20111 UnarchiveSalesInvoice(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = UnarchiveSalesInvoiceWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = UnarchiveSalesInvoiceWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2349,7 +2359,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > UnarchiveSalesInvoiceWithHttpInfo (int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse20111> UnarchiveSalesInvoiceWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -2395,11 +2405,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2409,8 +2419,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -2421,10 +2431,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> UnarchiveSalesInvoiceAsync (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> UnarchiveSalesInvoiceAsync(int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await UnarchiveSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await UnarchiveSalesInvoiceAsyncWithHttpInfo(companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -2436,7 +2446,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UnarchiveSalesInvoiceAsyncWithHttpInfo (int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UnarchiveSalesInvoiceAsyncWithHttpInfo(int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'companyId' is set
             if (companyId == null)
@@ -2482,11 +2492,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.PATCH, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2496,8 +2506,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -2509,10 +2519,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>InlineResponse20111</returns>
-        public InlineResponse20111 UpdateSalesInvoice (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public InlineResponse20111 UpdateSalesInvoice(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = UpdateSalesInvoiceWithHttpInfo(salesInvoiceForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = UpdateSalesInvoiceWithHttpInfo(salesInvoiceForm, companyId, id, include);
+            return localVarResponse.Data;
         }
 
         /// <summary>
@@ -2524,7 +2534,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>ApiResponse of InlineResponse20111</returns>
-        public ApiResponse< InlineResponse20111 > UpdateSalesInvoiceWithHttpInfo (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public ApiResponse<InlineResponse20111> UpdateSalesInvoiceWithHttpInfo(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'salesInvoiceForm' is set
             if (salesInvoiceForm == null)
@@ -2581,11 +2591,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)Configuration.ApiClient.CallApi(localVarPath,
                 Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2595,8 +2605,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
         /// <summary>
@@ -2608,10 +2618,10 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of InlineResponse20111</returns>
-        public async System.Threading.Tasks.Task<InlineResponse20111> UpdateSalesInvoiceAsync (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<InlineResponse20111> UpdateSalesInvoiceAsync(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
-             ApiResponse<InlineResponse20111> localVarResponse = await UpdateSalesInvoiceAsyncWithHttpInfo(salesInvoiceForm, companyId, id, include);
-             return localVarResponse.Data;
+            ApiResponse<InlineResponse20111> localVarResponse = await UpdateSalesInvoiceAsyncWithHttpInfo(salesInvoiceForm, companyId, id, include);
+            return localVarResponse.Data;
 
         }
 
@@ -2624,7 +2634,7 @@ namespace PeakUp.Integrations.Parasut.Api
         /// <param name="id">Fatura ID</param>
         /// <param name="include">Response ile birlikte geri dönmesini istediğiniz ilişkiler - *Available: category, contact, details, payments, payments.tx, tags, sharings, recurrence_plan, active_e_document* (optional)</param>
         /// <returns>Task of ApiResponse (InlineResponse20111)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UpdateSalesInvoiceAsyncWithHttpInfo (SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
+        public async System.Threading.Tasks.Task<ApiResponse<InlineResponse20111>> UpdateSalesInvoiceAsyncWithHttpInfo(SalesInvoiceForm1 salesInvoiceForm, int? companyId, int? id, string include = null)
         {
             // verify the required parameter 'salesInvoiceForm' is set
             if (salesInvoiceForm == null)
@@ -2681,11 +2691,11 @@ namespace PeakUp.Integrations.Parasut.Api
             }
 
             // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+            IRestResponse localVarResponse = (IRestResponse)await Configuration.ApiClient.CallApiAsync(localVarPath,
                 Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
                 localVarPathParams, localVarHttpContentType);
 
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
+            int localVarStatusCode = (int)localVarResponse.StatusCode;
 
             if (ExceptionFactory != null)
             {
@@ -2695,8 +2705,8 @@ namespace PeakUp.Integrations.Parasut.Api
 
             return new ApiResponse<InlineResponse20111>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (InlineResponse20111) Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
-            
+                (InlineResponse20111)Configuration.ApiClient.Deserialize(localVarResponse, typeof(InlineResponse20111)));
+
         }
 
     }

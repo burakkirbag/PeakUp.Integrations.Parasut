@@ -89,7 +89,13 @@ namespace PeakUp.Integrations.Parasut.Model
             /// Enum Einvoices for "e_invoices"
             /// </summary>
             [EnumMember(Value = "e_invoices")]
-            Einvoices
+            Einvoices,
+
+            /// <summary>
+            /// Enum Products for "products"
+            /// </summary>
+            [EnumMember(Value = "products")]
+            Products
         }
 
         /// <summary>

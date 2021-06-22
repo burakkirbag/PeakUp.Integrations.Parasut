@@ -151,7 +151,13 @@ namespace PeakUp.Integrations.Parasut.Model
             /// Enum Percentage for "amount percentage"
             /// </summary>
             [EnumMember(Value = "amount percentage")]
-            Percentage
+            Percentage,
+
+            /// <summary>
+            /// Enum Amount for "amount"
+            /// </summary>
+            [EnumMember(Value = "amount")]
+            Amount
         }
 
         /// <summary>
